@@ -103,7 +103,7 @@ module WillPaginate
           end
           attrs
         end
-        "<#{name}#{string_attributes}>#{value}</#{name}>"
+        "<#{name}#{string_attributes}>#{Array(value).join}</#{name}>"
       end
 
       def rel_value(page)
